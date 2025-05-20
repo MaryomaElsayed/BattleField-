@@ -8,10 +8,19 @@ true. Follow that expression with a colon and then the expression to run if the
 condition is false
  */
 
-const dt = Date();
+/**
+ * SYNTAX =
+ * condition ? value_if_true : value_if_false;
+ */
+const dt =  new Date();
 const hours = dt.getHours();
 
 let msg;
 msg = hours < 12 ? ('Good Morning!') : ('Welcom!');
 
 console.log(msg);
+
+// EXAMPLE 2 :
+let age = 21;
+let can_vote = age > 18 ? ('Can Vote!') : ('Can Not Vote!');
+console.log(can_vote);
